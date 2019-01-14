@@ -7,8 +7,9 @@ public class RotateImage {
                 {4, 5, 6},
                 {7, 8, 9}
         };
-
+        long start = System.currentTimeMillis();
         new RotateImage().rotate(matrix);
+        System.out.println(System.currentTimeMillis() - start);
     }
 
     public void rotate(int[][] matrix) {
